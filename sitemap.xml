@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://andythecoder.com/about/</loc>
+    <loc>https://blog.andythecoder.com/about/</loc>
     <lastmod>2020-01-04T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://andythecoder.com/</loc>
+    <loc>https://blog.andythecoder.com/</loc>
     <lastmod>2020-01-04T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://andythecoder.com/posts/hello-world/</loc>
+    <loc>https://blog.andythecoder.com/posts/hello-world/</loc>
     <lastmod>2020-01-03T11:50:28+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://andythecoder.com/posts/</loc>
+    <loc>https://blog.andythecoder.com/posts/</loc>
     <lastmod>2020-01-03T11:50:28+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://andythecoder.com/categories/</loc>
+    <loc>https://blog.andythecoder.com/categories/</loc>
   </url>
   
   <url>
-    <loc>https://andythecoder.com/tags/</loc>
+    <loc>https://blog.andythecoder.com/tags/</loc>
   </url>
   
 </urlset>
