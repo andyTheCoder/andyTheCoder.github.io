@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.andythecoder.com/about/</loc>
-    <lastmod>2020-01-04T12:00:00+00:00</lastmod>
+    <loc>https://blog.andythecoder.com/posts/hugo/404-ascii-art/</loc>
+    <lastmod>2020-01-05T12:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://blog.andythecoder.com/</loc>
+    <lastmod>2020-01-05T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.andythecoder.com/tags/ascii-art/</loc>
+    <lastmod>2020-01-05T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.andythecoder.com/tags/hugo/</loc>
+    <lastmod>2020-01-05T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.andythecoder.com/posts/</loc>
+    <lastmod>2020-01-05T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.andythecoder.com/tags/</loc>
+    <lastmod>2020-01-05T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.andythecoder.com/about/</loc>
     <lastmod>2020-01-04T12:00:00+00:00</lastmod>
   </url>
   
@@ -18,16 +43,7 @@
   </url>
   
   <url>
-    <loc>https://blog.andythecoder.com/posts/</loc>
-    <lastmod>2020-01-03T11:50:28+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.andythecoder.com/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://blog.andythecoder.com/tags/</loc>
   </url>
   
 </urlset>
