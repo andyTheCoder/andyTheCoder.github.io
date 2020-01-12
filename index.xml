@@ -6,10 +6,30 @@
     <description>Recent content on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sun, 05 Jan 2020 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My DNS disappeared</title>
+      <link>https://blog.andythecoder.com/posts/dns/my-dns-disappeared/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/posts/dns/my-dns-disappeared/</guid>
+      <description>TL;DR  when moving nameservers to cloudflare; make sure the domain contact emails are valid.  My DNS disappeared  When setting up this blog I used (re-used) andythecoder.com. I wanted to route through cloudflare, mainly (but not only) for the free ssl.
+NB. I  cloudflare.
+I have gone through the process of moving nameservers from a domain registrar to cloudflare many times, always without a hitch&amp;hellip; but this time the domain simply vanished.</description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>https://blog.andythecoder.com/privacy/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/privacy/</guid>
+      <description>TL;DR  This site uses Google Analytics.  A bit more&amp;hellip; This website uses “Google Analytics” to collect information about the use of my site. Google Analytics collects information such as how often users visit my site, what pages they visit when they do so, and what other sites they used prior to coming to this site. We use the information we get from Google Analytics to improve this site. Google Analytics collects only the IP address assigned to you on the date you visit this site, rather than your name or other identifying information.</description>
+    </item>
     
     <item>
       <title>404 ascii art hugo page</title>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>My DNS disappeared :: AndyTheCoder — Blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="TL;DR  when moving nameservers to cloudflare; make sure the domain contact emails are valid.  My DNS disappeared  When setting up this blog I used (re-used) andythecoder.com. I wanted to route through cloudflare, mainly (but not only) for the free ssl.
+NB. I  cloudflare.
+I have gone through the process of moving nameservers from a domain registrar to cloudflare many times, always without a hitch&amp;hellip; but this time the domain simply vanished."/>
+<meta name="keywords" content=", "/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://blog.andythecoder.com/posts/dns/my-dns-disappeared/" />
+
+
+<link rel="stylesheet" href="https://blog.andythecoder.com/assets/style.css">
+
+  <link rel="stylesheet" href="https://blog.andythecoder.com/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.andythecoder.com/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="https://blog.andythecoder.com/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="My DNS disappeared :: AndyTheCoder — Blog" />
+<meta name="twitter:description" content="TL;DR  when moving nameservers to cloudflare; make sure the domain contact emails are valid.  My DNS disappeared  When setting up this blog I used (re-used) andythecoder.com. I wanted to route through cloudflare, mainly (but not only) for the free ssl.
+NB. I  cloudflare.
+I have gone through the process of moving nameservers from a domain registrar to cloudflare many times, always without a hitch&amp;hellip; but this time the domain simply vanished." />
+<meta name="twitter:site" content="https://blog.andythecoder.com/" />
+<meta name="twitter:creator" content="andy" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="My DNS disappeared :: AndyTheCoder — Blog">
+<meta property="og:description" content="TL;DR  when moving nameservers to cloudflare; make sure the domain contact emails are valid.  My DNS disappeared  When setting up this blog I used (re-used) andythecoder.com. I wanted to route through cloudflare, mainly (but not only) for the free ssl.
+NB. I  cloudflare.
+I have gone through the process of moving nameservers from a domain registrar to cloudflare many times, always without a hitch&amp;hellip; but this time the domain simply vanished." />
+<meta property="og:url" content="https://blog.andythecoder.com/posts/dns/my-dns-disappeared/" />
+<meta property="og:site_name" content="My DNS disappeared" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2020-01-12 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-336407-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-336407-5');
+</script>
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    AndyTheCoder
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">about</a></li>
+        
+      
+        
+          <li><a href="/privacy">privacy</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">about</a></li>
+      
+    
+      
+        <li><a href="/privacy">privacy</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://blog.andythecoder.com/posts/dns/my-dns-disappeared/">My DNS disappeared</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2020-01-12
+    </span>
+    
+    
+    <span class="post-author">::
+      andy
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://blog.andythecoder.com/tags/cloudflare/">cloudflare</a>&nbsp;
+    
+    #<a href="https://blog.andythecoder.com/tags/nameservers/">nameservers</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p align="right">
+    <img align="centred" src="/img/330px-Cloudflare_logo.svg.png" alt="cloudflare" />
+</p>
+<h3 id="tldr">TL;DR</h3>
+<ul>
+<li>when moving nameservers to cloudflare; make sure the domain contact emails are valid.</li>
+</ul>
+<h3 id="my-dns-disappeared-hahahugoshortcode-s1-hbhb">My DNS disappeared <i style="color:" class="far fa-frown"></i></h3>
+<p>When setting up this blog I used (re-used) andythecoder.com.
+I wanted to route through cloudflare, mainly (but not only) for the free ssl.</p>
+<p>NB. I <i style="color:red" class="far fa-heart"></i> cloudflare.</p>
+<p>I have gone through the process of moving nameservers from a domain registrar to cloudflare many times, always without a hitch&hellip;  but this time the domain simply vanished.  The nameservers listed by my registrar looked good, cloudflare setup looked good, but the internet disagreed:</p>
+<p align="center">
+    <img align="centred" src="/img/dns-not-found.png" alt="domain not found" />
+</p>
+<p>I got &lsquo;there is no record of this domain&rsquo; from various online tools.</p>
+<p>On the second support call to my registrar, the support guy read my domain back to me and continued with <a href="mailto:andy@nildram.co.uk">andy@nildram.co.uk</a> as my contact details.</p>
+<p>Finally the penny dropped&hellip;  <i style="color:orange" class="far fa-lightbulb"></i></p>
+<p>I bought the domain many years ago and had never updated the contact details.  Nildram was my isp many moons ago and no longer exists. I updated the contact details for the domain and within 3 minutes received an email from cloudflare; the domain transfer was successful.</p>
+<p>So, if your nameserver transfer stalls leaving your domain in limbo; check the domain contact email address is valid.</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      
+      <span class="button next">
+        <a href="https://blog.andythecoder.com/posts/hugo/404-ascii-art/">
+          <span class="button__text">404 ascii art hugo page</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://blog.andythecoder.com/assets/main.js"></script>
+<script src="https://blog.andythecoder.com/assets/prism.js"></script>
+
+
+
+
+  
+</div>
+
+</body>
+</html>

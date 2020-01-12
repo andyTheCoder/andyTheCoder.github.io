@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cloudflare on AndyTheCoder</title>
+    <link>https://blog.andythecoder.com/tags/cloudflare/</link>
+    <description>Recent content in cloudflare on AndyTheCoder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-uk</language>
+    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.andythecoder.com/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My DNS disappeared</title>
+      <link>https://blog.andythecoder.com/posts/dns/my-dns-disappeared/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/posts/dns/my-dns-disappeared/</guid>
+      <description>TL;DR  when moving nameservers to cloudflare; make sure the domain contact emails are valid.  My DNS disappeared  When setting up this blog I used (re-used) andythecoder.com. I wanted to route through cloudflare, mainly (but not only) for the free ssl.
+NB. I  cloudflare.
+I have gone through the process of moving nameservers from a domain registrar to cloudflare many times, always without a hitch&amp;hellip; but this time the domain simply vanished.</description>
+    </item>
+    
+  </channel>
+</rss>
