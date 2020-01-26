@@ -4,7 +4,27 @@
   
   <url>
     <loc>https://blog.andythecoder.com/</loc>
-    <lastmod>2020-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.andythecoder.com/posts/c-sharp/underscores/</loc>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.andythecoder.com/tags/c-sharp/</loc>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.andythecoder.com/posts/</loc>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.andythecoder.com/tags/</loc>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -23,17 +43,7 @@
   </url>
   
   <url>
-    <loc>https://blog.andythecoder.com/posts/</loc>
-    <lastmod>2020-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://blog.andythecoder.com/privacy/</loc>
-    <lastmod>2020-01-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.andythecoder.com/tags/</loc>
     <lastmod>2020-01-12T00:00:00+00:00</lastmod>
   </url>
   

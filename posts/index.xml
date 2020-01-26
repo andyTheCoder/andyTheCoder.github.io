@@ -6,10 +6,21 @@
     <description>Recent content in Posts on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C# and underscores</title>
+      <link>https://blog.andythecoder.com/posts/c-sharp/underscores/</link>
+      <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/posts/c-sharp/underscores/</guid>
+      <description>TL;DR  an underscore in c# is a variable that you do not care about; they are called discards an underscore is a digit separator   Underscores as discards unsplash-logoShane Rounce
+So if you see code like this:
+var (_, _, _, pop1, _, pop2) = QueryCityDataForYears(&amp;#34;New York City&amp;#34;, 1960, 2010);The 1st, 2nd, 3rd &amp;amp; 5th values of the returned tuple; we don&#39;t care about. Discards were introduced in c# 7.</description>
+    </item>
     
     <item>
       <title>My DNS disappeared</title>
