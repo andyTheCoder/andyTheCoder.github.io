@@ -6,10 +6,21 @@
     <description>Recent content on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sun, 26 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tools</title>
+      <link>https://blog.andythecoder.com/tools/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/tools/</guid>
+      <description>unsplash-logoKatie Rodriguez
+This is my list of apps/tools when installing a new dev workstation (win 10):
+Browsers  Chrome: https://www.google.com/chrome/ Firefox: https://www.mozilla.org/en-GB/firefox/new/ Edge (chromium): https://support.microsoft.com/en-gb/help/4501095/download-the-new-microsoft-edge-based-on-chromium  Editors  Visual studio 2019 VS add-ins:  Resharper Code Align: https://marketplace.visualstudio.com/items?itemName=cpmcgrath.Codealignment  configuration: https://github.com/cpmcgrath/codealignment/wiki/Enabling-shortcuts-in-Visual-Studio   Markdown: https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor Ref12: https://marketplace.visualstudio.com/items?itemName=SchabseSLaks.Ref12 Glyphfriend: https://marketplace.visualstudio.com/items?itemName=RionWilliams.Glyphfriend2019   Azure Storage Explorer: Visual studio code: https://code.visualstudio.com/ VS code addins:  Jenkinsfile   SQL Server Management Studio: https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms Markdown: http://code52.</description>
+    </item>
     
     <item>
       <title>C# and underscores</title>
