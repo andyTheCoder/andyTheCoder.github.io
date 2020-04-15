@@ -6,10 +6,19 @@
     <description>Recent content on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Curl a message to Microsoft Teams</title>
+      <link>https://blog.andythecoder.com/posts/teams/curl-message-to-teams/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/posts/teams/curl-message-to-teams/</guid>
+      <description>TL;DR  create a connector of type: &amp;lsquo;incoming webhook&amp;rsquo; to the teams channel you want to post to and copy the generated url create a curl command view your teams message   Create the connector (aka webhook)   select the channel you want to create a connector for:   add an &amp;lsquo;incoming webhook&amp;rsquo;:   click add:   name the connector (Note this name will appear in teams as the message sender)</description>
+    </item>
     
     <item>
       <title>Tools</title>

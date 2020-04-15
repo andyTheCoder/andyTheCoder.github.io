@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Curl a message to Microsoft Teams :: AndyTheCoder — Blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="TL;DR  create a connector of type: &amp;lsquo;incoming webhook&amp;rsquo; to the teams channel you want to post to and copy the generated url create a curl command view your teams message   Create the connector (aka webhook)   select the channel you want to create a connector for:   add an &amp;lsquo;incoming webhook&amp;rsquo;:   click add:   name the connector (Note this name will appear in teams as the message sender)"/>
+<meta name="keywords" content="curl, teams"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://blog.andythecoder.com/posts/teams/curl-message-to-teams/" />
+
+
+<link rel="stylesheet" href="https://blog.andythecoder.com/assets/style.css">
+
+  <link rel="stylesheet" href="https://blog.andythecoder.com/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.andythecoder.com/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="https://blog.andythecoder.com/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Curl a message to Microsoft Teams :: AndyTheCoder — Blog" />
+<meta name="twitter:description" content="TL;DR  create a connector of type: &amp;lsquo;incoming webhook&amp;rsquo; to the teams channel you want to post to and copy the generated url create a curl command view your teams message   Create the connector (aka webhook)   select the channel you want to create a connector for:   add an &amp;lsquo;incoming webhook&amp;rsquo;:   click add:   name the connector (Note this name will appear in teams as the message sender)" />
+<meta name="twitter:site" content="https://blog.andythecoder.com/" />
+<meta name="twitter:creator" content="andy" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Curl a message to Microsoft Teams :: AndyTheCoder — Blog">
+<meta property="og:description" content="TL;DR  create a connector of type: &amp;lsquo;incoming webhook&amp;rsquo; to the teams channel you want to post to and copy the generated url create a curl command view your teams message   Create the connector (aka webhook)   select the channel you want to create a connector for:   add an &amp;lsquo;incoming webhook&amp;rsquo;:   click add:   name the connector (Note this name will appear in teams as the message sender)" />
+<meta property="og:url" content="https://blog.andythecoder.com/posts/teams/curl-message-to-teams/" />
+<meta property="og:site_name" content="Curl a message to Microsoft Teams" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2020-04-15 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-336407-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-336407-5');
+</script>
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    AndyTheCoder
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">about</a></li>
+        
+      
+        
+          <li><a href="/privacy">privacy</a></li>
+        
+      
+        
+          <li><a href="/index.xml">rss</a></li>
+        
+      
+        
+          <li><a href="/tools">tools</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">about</a></li>
+      
+    
+      
+        <li><a href="/privacy">privacy</a></li>
+      
+    
+      
+        <li><a href="/index.xml">rss</a></li>
+      
+    
+      
+        <li><a href="/tools">tools</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://blog.andythecoder.com/posts/teams/curl-message-to-teams/">Curl a message to Microsoft Teams</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2020-04-15
+    </span>
+    
+    
+    <span class="post-author">::
+      andy
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://blog.andythecoder.com/tags/teams/">teams</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <h1 id="tldr">TL;DR</h1>
+<ul>
+<li><a href="#create-the-connector-aka-webhook">create a connector of type: &lsquo;incoming webhook&rsquo; to the teams channel you want to post to and copy the generated url</a></li>
+<li><a href="#create-the-curl-command">create a curl command</a></li>
+<li><a href="#result">view your teams message</a></li>
+</ul>
+<hr>
+<h1 id="create-the-connector-aka-webhook">Create the connector (aka webhook)</h1>
+<ul>
+<li>
+<p>select the channel you want to create a connector for:
+<p align="right">
+    <img align="centred" src="/img/teams/curl-teams-1.png" alt="" />
+</p></p>
+</li>
+<li>
+<p>add an &lsquo;incoming webhook&rsquo;:
+<p align="right">
+    <img align="centred" src="/img/teams/curl-teams-2.png" alt="" />
+</p></p>
+</li>
+<li>
+<p>click add:
+<p align="right">
+    <img align="centred" src="/img/teams/curl-teams-3.png" alt="" />
+</p></p>
+</li>
+<li>
+<p>name the connector (Note this name will appear in teams as the message sender)</p>
+</li>
+<li>
+<p>click &lsquo;create&rsquo;:
+<p align="right">
+    <img align="centred" src="/img/teams/curl-teams-4.png" alt="" />
+</p></p>
+</li>
+<li>
+<p>copy the generated connector url:
+<p align="right">
+    <img align="centred" src="/img/teams/curl-teams-5.png" alt="" />
+</p></p>
+</li>
+</ul>
+<h1 id="create-the-curl-command">Create the Curl command</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">
+set URL<span style="color:#f92672">=</span>https://outlook.office.com/webhook/1f53a159-15e1-4215-a345-31b004a1a5a9@d2449f56-cf6a-4196-87bc-aaaaaaaaaaaa/IncomingWebhook/a97a67eeac05428db5b9a4b5ba4cfa70/f58df943-e123-4a0d-b03b-bbbbbbbbbbbb
+
+set DATA<span style="color:#f92672">=</span><span style="color:#f92672">{</span><span style="color:#e6db74">&#34;&#34;</span>@context<span style="color:#e6db74">&#34;&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>http://schema.org/extensions<span style="color:#e6db74">&#34;&#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>@type<span style="color:#e6db74">&#34;&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>MessageCard<span style="color:#e6db74">&#34;&#34;</span>,<span style="color:#e6db74">&#34;&#34;</span>text<span style="color:#e6db74">&#34;&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>Hello from curl<span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">}</span>
+
+curl.exe -XPOST -H <span style="color:#e6db74">&#34;Content-type: application/json&#34;</span> -d <span style="color:#e6db74">&#34;%DATA%&#34;</span> %URL%
+</code></pre></div><h1 id="result">Result</h1>
+<p align="right">
+    <img align="centred" src="/img/teams/curl-teams-6.png" alt="" />
+</p>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      
+      <span class="button next">
+        <a href="https://blog.andythecoder.com/posts/c-sharp/underscores/">
+          <span class="button__text">C# and underscores</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://blog.andythecoder.com/assets/main.js"></script>
+<script src="https://blog.andythecoder.com/assets/prism.js"></script>
+
+
+
+
+  
+</div>
+
+</body>
+</html>
