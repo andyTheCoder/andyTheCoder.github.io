@@ -6,10 +6,20 @@
     <description>Recent content in Posts on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Wed, 15 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>PC USB always on</title>
+      <link>https://blog.andythecoder.com/posts/hardware/pc-usb-always-on/</link>
+      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/posts/hardware/pc-usb-always-on/</guid>
+      <description>TL;DR  to switch usb power off when shutting pc down: enable ErP setting in bios to S4+S5.  All my usb devices were still on when my pc was shut down  I bought a new microphone which had an led on it. When the pc was shut down, the light was still on, annoying more than anything else.
+I tried the windows 10 power options to no avail. After googling I found some people mentioning a bios setting S5&amp;hellip;</description>
+    </item>
     
     <item>
       <title>Curl a message to Microsoft Teams</title>
