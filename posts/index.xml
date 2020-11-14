@@ -6,10 +6,22 @@
     <description>Recent content in Posts on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C# 9 records</title>
+      <link>https://blog.andythecoder.com/posts/c-sharp/records/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/posts/c-sharp/records/</guid>
+      <description>Records: immutable classes show me the code&amp;hellip;
+ github repo: https://github.com/andyTheCoder/c-sharp-9
+References
+ https://devblogs.microsoft.com/dotnet/c-9-0-on-the-record/ https://channel9.msdn.com/Shows/On-NET/C-9-Language-Features?ocid=player https://daveabrock.com/2020/11/02/csharp-9-records-immutable-default  </description>
+    </item>
     
     <item>
       <title>PC USB always on</title>

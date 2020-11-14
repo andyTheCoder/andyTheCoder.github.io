@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
   
-    <title>PC USB always on :: AndyTheCoder — Blog</title>
+    <title>C# 9 records :: AndyTheCoder — Blog</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="description" content="TL;DR  to switch usb power off when shutting pc down: enable ErP setting in bios to S4&#43;S5.  All my usb devices were still on when my pc was shut down  I bought a new microphone which had an led on it. When the pc was shut down, the light was still on, annoying more than anything else.
-I tried the windows 10 power options to no avail. After googling I found some people mentioning a bios setting S5&amp;hellip;"/>
+<meta name="description" content="Records: immutable classes show me the code&amp;hellip;
+ github repo: https://github.com/andyTheCoder/c-sharp-9
+References
+ https://devblogs.microsoft.com/dotnet/c-9-0-on-the-record/ https://channel9.msdn.com/Shows/On-NET/C-9-Language-Features?ocid=player https://daveabrock.com/2020/11/02/csharp-9-records-immutable-default  "/>
 <meta name="keywords" content=", "/>
 <meta name="robots" content="noodp"/>
-<link rel="canonical" href="https://blog.andythecoder.com/posts/hardware/pc-usb-always-on/" />
+<link rel="canonical" href="https://blog.andythecoder.com/posts/c-sharp/records/" />
 
 
 <link rel="stylesheet" href="https://blog.andythecoder.com/assets/style.css">
@@ -29,9 +31,11 @@ I tried the windows 10 power options to no avail. After googling I found some pe
 
 
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="PC USB always on :: AndyTheCoder — Blog" />
-<meta name="twitter:description" content="TL;DR  to switch usb power off when shutting pc down: enable ErP setting in bios to S4&#43;S5.  All my usb devices were still on when my pc was shut down  I bought a new microphone which had an led on it. When the pc was shut down, the light was still on, annoying more than anything else.
-I tried the windows 10 power options to no avail. After googling I found some people mentioning a bios setting S5&amp;hellip;" />
+<meta name="twitter:title" content="C# 9 records :: AndyTheCoder — Blog" />
+<meta name="twitter:description" content="Records: immutable classes show me the code&amp;hellip;
+ github repo: https://github.com/andyTheCoder/c-sharp-9
+References
+ https://devblogs.microsoft.com/dotnet/c-9-0-on-the-record/ https://channel9.msdn.com/Shows/On-NET/C-9-Language-Features?ocid=player https://daveabrock.com/2020/11/02/csharp-9-records-immutable-default  " />
 <meta name="twitter:site" content="https://blog.andythecoder.com/" />
 <meta name="twitter:creator" content="andy" />
 <meta name="twitter:image" content="">
@@ -39,16 +43,18 @@ I tried the windows 10 power options to no avail. After googling I found some pe
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="PC USB always on :: AndyTheCoder — Blog">
-<meta property="og:description" content="TL;DR  to switch usb power off when shutting pc down: enable ErP setting in bios to S4&#43;S5.  All my usb devices were still on when my pc was shut down  I bought a new microphone which had an led on it. When the pc was shut down, the light was still on, annoying more than anything else.
-I tried the windows 10 power options to no avail. After googling I found some people mentioning a bios setting S5&amp;hellip;" />
-<meta property="og:url" content="https://blog.andythecoder.com/posts/hardware/pc-usb-always-on/" />
-<meta property="og:site_name" content="PC USB always on" />
+<meta property="og:title" content="C# 9 records :: AndyTheCoder — Blog">
+<meta property="og:description" content="Records: immutable classes show me the code&amp;hellip;
+ github repo: https://github.com/andyTheCoder/c-sharp-9
+References
+ https://devblogs.microsoft.com/dotnet/c-9-0-on-the-record/ https://channel9.msdn.com/Shows/On-NET/C-9-Language-Features?ocid=player https://daveabrock.com/2020/11/02/csharp-9-records-immutable-default  " />
+<meta property="og:url" content="https://blog.andythecoder.com/posts/c-sharp/records/" />
+<meta property="og:site_name" content="C# 9 records" />
 <meta property="og:image" content="">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 
-<meta property="article:published_time" content="2020-05-25 00:00:00 &#43;0000 UTC" />
+<meta property="article:published_time" content="2020-11-14 00:00:00 &#43;0000 UTC" />
 
 
 
@@ -145,11 +151,11 @@ I tried the windows 10 power options to no avail. After googling I found some pe
     
 <div class="post">
   <h1 class="post-title">
-    <a href="https://blog.andythecoder.com/posts/hardware/pc-usb-always-on/">PC USB always on</a></h1>
+    <a href="https://blog.andythecoder.com/posts/c-sharp/records/">C# 9 records</a></h1>
   <div class="post-meta">
       
     <span class="post-date">
-      2020-05-25
+      2020-11-14
     </span>
     
     
@@ -162,9 +168,7 @@ I tried the windows 10 power options to no avail. After googling I found some pe
   
   <span class="post-tags">
     
-    #<a href="https://blog.andythecoder.com/tags/hardware/">hardware</a>&nbsp;
-    
-    #<a href="https://blog.andythecoder.com/tags/usb/">usb</a>&nbsp;
+    #<a href="https://blog.andythecoder.com/tags/c-sharp/">c-sharp</a>&nbsp;
     
   </span>
   
@@ -173,23 +177,19 @@ I tried the windows 10 power options to no avail. After googling I found some pe
 
   <div class="post-content">
     <p align="right">
-    <img align="centred" src="/img/usb-stick-200.png" alt="usb" />
+    <img align="centred" src="/img/c-sharp-small.png" alt="c-sharp-9" />
 </p>
-<h3 id="tldr">TL;DR</h3>
+<h1 id="records-immutable-classes">Records: immutable classes</h1>
+<p>show me the code&hellip;</p>
+<!-- raw HTML omitted -->
+<hr>
+<p>github repo: <a href="https://github.com/andyTheCoder/c-sharp-9">https://github.com/andyTheCoder/c-sharp-9</a></p>
+<p>References</p>
 <ul>
-<li>to switch usb power off when shutting pc down: enable ErP setting in bios to S4+S5.</li>
+<li><a href="https://devblogs.microsoft.com/dotnet/c-9-0-on-the-record/">https://devblogs.microsoft.com/dotnet/c-9-0-on-the-record/</a></li>
+<li><a href="https://channel9.msdn.com/Shows/On-NET/C-9-Language-Features?ocid=player">https://channel9.msdn.com/Shows/On-NET/C-9-Language-Features?ocid=player</a></li>
+<li><a href="https://daveabrock.com/2020/11/02/csharp-9-records-immutable-default">https://daveabrock.com/2020/11/02/csharp-9-records-immutable-default</a></li>
 </ul>
-<h3 id="all-my-usb-devices-were-still-on-when-my-pc-was-shut-down-hahahugoshortcode-s1-hbhb">All my usb devices were still on when my pc was shut down <i style="color:" class="far fa-frown"></i></h3>
-<p>I bought a new microphone which had an led on it.  When the pc was shut down, the light was still on, annoying more than anything else.</p>
-<p>I tried the windows 10 power options to no avail.
-After <a href="https://linustechtips.com/main/topic/1097632-usb-ports-powered-on-after-shutdown-of-the-pc/">googling</a> I found some people mentioning a bios setting S5&hellip;</p>
-<p>After trying a few different settings, the one that worked for me was</p>
-<ul>
-<li>ErP: Enable(S4+S5) <i style="color:green" class="far fa-smile"></i></li>
-</ul>
-<p align="right">
-    <img align="centred" src="/img/bios-usb-s4-and-s5.jpg" alt="bios" />
-</p>
 
   </div>
   
@@ -201,17 +201,10 @@ After <a href="https://linustechtips.com/main/topic/1097632-usb-ports-powered-on
     </div>
     <div class="pagination__buttons">
       
-      <span class="button previous">
-        <a href="https://blog.andythecoder.com/posts/c-sharp/records/">
-          <span class="button__icon">←</span>
-          <span class="button__text">C# 9 records</span>
-        </a>
-      </span>
-      
       
       <span class="button next">
-        <a href="https://blog.andythecoder.com/posts/teams/curl-message-to-teams/">
-          <span class="button__text">Curl a message to Microsoft Teams</span>
+        <a href="https://blog.andythecoder.com/posts/hardware/pc-usb-always-on/">
+          <span class="button__text">PC USB always on</span>
           <span class="button__icon">→</span>
         </a>
       </span>
