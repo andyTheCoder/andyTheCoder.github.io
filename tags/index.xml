@@ -6,15 +6,24 @@
     <description>Recent content in Tags on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>blazor</title>
+      <link>https://blog.andythecoder.com/tags/blazor/</link>
+      <pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/tags/blazor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>c-sharp</title>
       <link>https://blog.andythecoder.com/tags/c-sharp/</link>
-      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>https://blog.andythecoder.com/tags/c-sharp/</guid>
       <description></description>

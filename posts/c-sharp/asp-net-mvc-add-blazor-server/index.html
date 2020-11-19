@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Asp Net MVC Adding Blazor Server :: AndyTheCoder — Blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="Overview Walk through taking an existing asp.net mvc app and adding server side blazor support.
+Pre-requisits  an existing asp.net mvc app running .net 5  New files _Imports.razor default using statements for blazor components  App.razor blazor routing  Pages/Counter.razor blazor component  Changed files startup.cs add blazor server side (no default blazor routing as routing handled by mvc)  Index.cshtml add blazor component to existing mvc view  Notes  this post demonstrates adding a blazor component to an existing mvc view page original mvc code base is mvc visual studio template additional code comes from blazor server side visual studio template this is not client side blazor aka wasm watch out for casing; blazor components must start capitalized   Code links  repo: https://github."/>
+<meta name="keywords" content=", "/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://blog.andythecoder.com/posts/c-sharp/asp-net-mvc-add-blazor-server/" />
+
+
+<link rel="stylesheet" href="https://blog.andythecoder.com/assets/style.css">
+
+  <link rel="stylesheet" href="https://blog.andythecoder.com/assets/green.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://blog.andythecoder.com/img/apple-touch-icon-144-precomposed.png">
+
+<link rel="shortcut icon" href="https://blog.andythecoder.com/img/favicon/green.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Asp Net MVC Adding Blazor Server :: AndyTheCoder — Blog" />
+<meta name="twitter:description" content="Overview Walk through taking an existing asp.net mvc app and adding server side blazor support.
+Pre-requisits  an existing asp.net mvc app running .net 5  New files _Imports.razor default using statements for blazor components  App.razor blazor routing  Pages/Counter.razor blazor component  Changed files startup.cs add blazor server side (no default blazor routing as routing handled by mvc)  Index.cshtml add blazor component to existing mvc view  Notes  this post demonstrates adding a blazor component to an existing mvc view page original mvc code base is mvc visual studio template additional code comes from blazor server side visual studio template this is not client side blazor aka wasm watch out for casing; blazor components must start capitalized   Code links  repo: https://github." />
+<meta name="twitter:site" content="https://blog.andythecoder.com/" />
+<meta name="twitter:creator" content="andy" />
+<meta name="twitter:image" content="">
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Asp Net MVC Adding Blazor Server :: AndyTheCoder — Blog">
+<meta property="og:description" content="Overview Walk through taking an existing asp.net mvc app and adding server side blazor support.
+Pre-requisits  an existing asp.net mvc app running .net 5  New files _Imports.razor default using statements for blazor components  App.razor blazor routing  Pages/Counter.razor blazor component  Changed files startup.cs add blazor server side (no default blazor routing as routing handled by mvc)  Index.cshtml add blazor component to existing mvc view  Notes  this post demonstrates adding a blazor component to an existing mvc view page original mvc code base is mvc visual studio template additional code comes from blazor server side visual studio template this is not client side blazor aka wasm watch out for casing; blazor components must start capitalized   Code links  repo: https://github." />
+<meta property="og:url" content="https://blog.andythecoder.com/posts/c-sharp/asp-net-mvc-add-blazor-server/" />
+<meta property="og:site_name" content="Asp Net MVC Adding Blazor Server" />
+<meta property="og:image" content="">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+<meta property="article:published_time" content="2020-11-19 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-336407-5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-336407-5');
+</script>
+
+
+</head>
+<body class="">
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    AndyTheCoder
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">about</a></li>
+        
+      
+        
+          <li><a href="/privacy">privacy</a></li>
+        
+      
+        
+          <li><a href="/index.xml">rss</a></li>
+        
+      
+        
+          <li><a href="/tools">tools</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">about</a></li>
+      
+    
+      
+        <li><a href="/privacy">privacy</a></li>
+      
+    
+      
+        <li><a href="/index.xml">rss</a></li>
+      
+    
+      
+        <li><a href="/tools">tools</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://blog.andythecoder.com/posts/c-sharp/asp-net-mvc-add-blazor-server/">Asp Net MVC Adding Blazor Server</a></h1>
+  <div class="post-meta">
+      
+    <span class="post-date">
+      2020-11-19
+    </span>
+    
+    
+    <span class="post-author">::
+      andy
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://blog.andythecoder.com/tags/c-sharp/">c-sharp</a>&nbsp;
+    
+    #<a href="https://blog.andythecoder.com/tags/blazor/">blazor</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  <div class="post-content">
+    <p align="right">
+    <img align="centred" src="/img/blazor-small.png" alt="blazor logo" />
+</p>
+<h1 id="overview">Overview</h1>
+<p>Walk through taking an existing asp.net mvc app and adding server side blazor support.</p>
+<h1 id="pre-requisits">Pre-requisits</h1>
+<ul>
+<li>an existing asp.net mvc app running .net 5</li>
+</ul>
+<h1 id="new-files">New files</h1>
+<h4 id="_importsrazor">_Imports.razor</h4>
+<p>default using statements for blazor components
+<script type="application/javascript" src="https://gist.github.com/andyTheCoder/723fa617d2ad09c3ee9cf8083d71010f.js"></script>
+</p>
+<h4 id="apprazor">App.razor</h4>
+<p>blazor routing
+<script type="application/javascript" src="https://gist.github.com/andyTheCoder/5f98f46dfcf1a5d6d30d34d9839800f3.js"></script>
+</p>
+<h4 id="pagescounterrazor">Pages/Counter.razor</h4>
+<p>blazor component
+<script type="application/javascript" src="https://gist.github.com/andyTheCoder/f2627526f85001072734014b6574a2a3.js"></script>
+</p>
+<h1 id="changed-files">Changed files</h1>
+<h4 id="startupcs">startup.cs</h4>
+<p>add blazor server side (no default blazor routing as routing handled by mvc)
+<script type="application/javascript" src="https://gist.github.com/andyTheCoder/5eefc7c8c8f91c52ccb036f972968018.js"></script>
+</p>
+<h4 id="indexcshtml">Index.cshtml</h4>
+<p>add blazor component to existing mvc view
+<script type="application/javascript" src="https://gist.github.com/andyTheCoder/a8f31547b73c4a73934fb12b0ebef7e7.js"></script>
+</p>
+<h1 id="notes">Notes</h1>
+<ul>
+<li>this post demonstrates adding a blazor component to an existing mvc view page</li>
+<li>original mvc code base is mvc visual studio template</li>
+<li>additional code comes from blazor server side visual studio template</li>
+<li>this is not client side blazor aka wasm</li>
+<li>watch out for casing; blazor components must start capitalized</li>
+</ul>
+<hr>
+<h1 id="code-links">Code links</h1>
+<ul>
+<li>repo: <a href="https://github.com/andyTheCoder/asp-net-mvc-add-blazor-server">https://github.com/andyTheCoder/asp-net-mvc-add-blazor-server</a></li>
+<li>commit with all required changes: <a href="https://github.com/andyTheCoder/asp-net-mvc-add-blazor-server/commit/d54f696553c4f0bb588400e3fa1f5298678fe737">https://github.com/andyTheCoder/asp-net-mvc-add-blazor-server/commit/d54f696553c4f0bb588400e3fa1f5298678fe737</a></li>
+</ul>
+<h1 id="references">References</h1>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0">https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-5.0</a></li>
+</ul>
+
+  </div>
+  
+  <div class="pagination">
+    <div class="pagination__title">
+      <span
+        class="pagination__title-h">Read other posts</span>
+      <hr />
+    </div>
+    <div class="pagination__buttons">
+      
+      
+      <span class="button next">
+        <a href="https://blog.andythecoder.com/posts/c-sharp/records/">
+          <span class="button__text">C# 9 records</span>
+          <span class="button__icon">→</span>
+        </a>
+      </span>
+      
+    </div>
+  </div>
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://blog.andythecoder.com/assets/main.js"></script>
+<script src="https://blog.andythecoder.com/assets/prism.js"></script>
+
+
+
+
+  
+</div>
+
+</body>
+</html>

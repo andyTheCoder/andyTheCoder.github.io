@@ -6,10 +6,20 @@
     <description>Recent content on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Asp Net MVC Adding Blazor Server</title>
+      <link>https://blog.andythecoder.com/posts/c-sharp/asp-net-mvc-add-blazor-server/</link>
+      <pubDate>Thu, 19 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/posts/c-sharp/asp-net-mvc-add-blazor-server/</guid>
+      <description>Overview Walk through taking an existing asp.net mvc app and adding server side blazor support.
+Pre-requisits  an existing asp.net mvc app running .net 5  New files _Imports.razor default using statements for blazor components  App.razor blazor routing  Pages/Counter.razor blazor component  Changed files startup.cs add blazor server side (no default blazor routing as routing handled by mvc)  Index.cshtml add blazor component to existing mvc view  Notes  this post demonstrates adding a blazor component to an existing mvc view page original mvc code base is mvc visual studio template additional code comes from blazor server side visual studio template this is not client side blazor aka wasm watch out for casing; blazor components must start capitalized   Code links  repo: https://github.</description>
+    </item>
     
     <item>
       <title>C# 9 records</title>
