@@ -6,10 +6,21 @@
     <description>Recent content in Posts on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Thu, 19 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Blazor Charts using Blazorise</title>
+      <link>https://blog.andythecoder.com/posts/c-sharp/blazorise/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/posts/c-sharp/blazorise/</guid>
+      <description>Demo of Blazorise which is a component library for Blazor. One of the interesting components is charting, which is a blazor wrapper for Chart.js
+This live demo shows client side blazor (wasm) generating charts
+Links  live demo: wasm blazor charts blazorise: https://blazorise.com/ chart docs: https://blazorise.com/docs/extensions/chart/ repo: https://github.com/andyTheCoder/blazorise-demo  </description>
+    </item>
     
     <item>
       <title>Asp.Net MVC Adding Blazor Server</title>
