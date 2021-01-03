@@ -6,10 +6,20 @@
     <description>Recent content in c-sharp on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Mon, 07 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/tags/c-sharp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>C# is not</title>
+      <link>https://blog.andythecoder.com/posts/c-sharp/not/</link>
+      <pubDate>Sun, 03 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/posts/c-sharp/not/</guid>
+      <description>TL;DR if (myVar is not null) DoSomething(); New C# 9 keyword: not One of the smaller (less headline grabbing) additions to C# 9 is pattern matching (enhancements). And one of the smaller, but probably one of the features that will be most used, is the &amp;lsquo;not&amp;rsquo; keyword.
+Previously a common &amp;lsquo;not null&amp;rsquo; check would be: // no longer recommended as equals operator can be over-ridden if (myVar != null) DoSomething(); // hard to read if (!</description>
+    </item>
     
     <item>
       <title>Blazor Charts using Blazorise</title>
