@@ -6,10 +6,19 @@
     <description>Recent content on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sticker on Laptop breaks warranty (according to eBuyer)</title>
+      <link>https://blog.andythecoder.com/posts/hardware/sticker-on-laptop-breaks-warranty/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/posts/hardware/sticker-on-laptop-breaks-warranty/</guid>
+      <description>TL;DR  A sticker on your laptop is &amp;lsquo;damage&amp;rsquo; and breaks your warranty Well, according to eBuyer&amp;hellip; Reading their linkedIn page: &amp;lsquo;We pride ourselves on our customer service&amp;rsquo;  I would beg to differ   eBuyer has refused to honour the Consumer Rights Act 2015 claiming that a sticker on a laptop voids their obligations under the act. They claim that a sticker invalidates the warranty, yet refuse to produce the warranty, let alone show where in the warranty it states that a sticker on a laptop is &amp;lsquo;damage&amp;rsquo;.</description>
+    </item>
     
     <item>
       <title>C# is not</title>

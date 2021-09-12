@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hardware on AndyTheCoder</title>
-    <link>https://blog.andythecoder.com/tags/hardware/</link>
-    <description>Recent content in hardware on AndyTheCoder</description>
+    <title>ebuyer on AndyTheCoder</title>
+    <link>https://blog.andythecoder.com/tags/ebuyer/</link>
+    <description>Recent content in ebuyer on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
     <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.andythecoder.com/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.andythecoder.com/tags/ebuyer/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,16 +18,6 @@
       
       <guid>https://blog.andythecoder.com/posts/hardware/sticker-on-laptop-breaks-warranty/</guid>
       <description>TL;DR  A sticker on your laptop is &amp;lsquo;damage&amp;rsquo; and breaks your warranty Well, according to eBuyer&amp;hellip; Reading their linkedIn page: &amp;lsquo;We pride ourselves on our customer service&amp;rsquo;  I would beg to differ   eBuyer has refused to honour the Consumer Rights Act 2015 claiming that a sticker on a laptop voids their obligations under the act. They claim that a sticker invalidates the warranty, yet refuse to produce the warranty, let alone show where in the warranty it states that a sticker on a laptop is &amp;lsquo;damage&amp;rsquo;.</description>
-    </item>
-    
-    <item>
-      <title>PC USB always on</title>
-      <link>https://blog.andythecoder.com/posts/hardware/pc-usb-always-on/</link>
-      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.andythecoder.com/posts/hardware/pc-usb-always-on/</guid>
-      <description>TL;DR  to switch usb power off when shutting pc down: enable ErP setting in bios to S4+S5.  All my usb devices were still on when my pc was shut down  I bought a new microphone which had an led on it. When the pc was shut down, the light was still on, annoying more than anything else.
-I tried the windows 10 power options to no avail. After googling I found some people mentioning a bios setting S5&amp;hellip;</description>
     </item>
     
   </channel>

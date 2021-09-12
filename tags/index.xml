@@ -6,10 +6,28 @@
     <description>Recent content in Tags on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sun, 03 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ebuyer</title>
+      <link>https://blog.andythecoder.com/tags/ebuyer/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/tags/ebuyer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hardware</title>
+      <link>https://blog.andythecoder.com/tags/hardware/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/tags/hardware/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>c-sharp</title>
@@ -26,15 +44,6 @@
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://blog.andythecoder.com/tags/blazor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hardware</title>
-      <link>https://blog.andythecoder.com/tags/hardware/</link>
-      <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.andythecoder.com/tags/hardware/</guid>
       <description></description>
     </item>
     
