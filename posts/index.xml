@@ -6,10 +6,19 @@
     <description>Recent content in Posts on AndyTheCoder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-uk</language>
-    <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.andythecoder.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Windows 11 Tweaks</title>
+      <link>https://blog.andythecoder.com/posts/windows/windows-11/</link>
+      <pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.andythecoder.com/posts/windows/windows-11/</guid>
+      <description>Windows 11 Tweaks  restore vpn shortcut right click &amp;lsquo;open with&amp;rsquo; start menu on left a note on dark &amp;amp; light themes  vpn shortcut  left click network icon right click background &amp;amp; left click &amp;lsquo;edit quick settings&amp;rsquo; click add &amp;amp; select vpn  right click &amp;lsquo;open with&amp;rsquo;  open regedit navigate to: HKEY_CURRENT_USER\SOFTWARE\CLASSES\CLSID\ create new key named (and include {}): {86ca1aa0-34aa-4e8b-a509-50c905bae2a2} under {86ca1aa0-34aa-4e8b-a509-50c905bae2a2}; create a new key called: InprocServer32 with empty/blank value close &amp;amp; reboot kudos: https://www.</description>
+    </item>
     
     <item>
       <title>Sticker on Laptop breaks warranty (according to eBuyer)</title>
